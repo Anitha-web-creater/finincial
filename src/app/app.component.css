@@ -1,0 +1,7 @@
+:root { --gap: 12px; font-family: Arial, sans-serif; }
+.topbar { background:#2b6cb0; color: white; padding: 12px;}
+.topbar a { color: white; margin-right: 8px; text-decoration:none; }
+.container { padding: 16px; }
+@media (max-width: 600px) {
+  .container { padding: 8px; }
+}

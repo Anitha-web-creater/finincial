@@ -1,0 +1,30 @@
+<section class="dashboard" appHighlight>
+  <h2>Portfolio Dashboard</h2>
+  <div class="summary">
+    <div class="card">
+      <h3>Total Value</h3>
+      <p class="big">{{ totalValue | shortNumber }}</p>
+    </div>
+    <div class="card">
+      <h3>Benchmark</h3>
+      <p class="big">{{ getBenchmark() | shortNumber }}</p>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <h3>Performance (simple SVG chart)</h3>
+    <svg viewBox="0 0 300 100" preserveAspectRatio="none" class="chart">
+      <polyline [attr.points]="generatePoints()" fill="none" stroke="#007acc" stroke-width="2"></polyline>
+    </svg>
+  </div>
+
+  <div class="list">
+    <h3>Holdings</h3>
+    <table>
+      <tr><th>Asset</th><th>Type</th><th>Qty</th><th>Price</th></tr>
+      <tr *ngFor="let p of portfolios">
+        <td>{{p.name}}</td><td>{{p.type}}</td><td>{{p.quantity}}</td><td>{{p.purchasePrice}}</td>
+      </tr>
+    </table>
+  </div>
+</section>

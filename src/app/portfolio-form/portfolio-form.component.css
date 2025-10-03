@@ -1,0 +1,5 @@
+.form { max-width:600px; margin:0 auto; }
+label { display:block; margin-bottom:8px; }
+input, select { display:block; padding:6px; width:100%; max-width:400px; }
+.error { color:#e53e3e; font-size:0.9rem; }
+.review { background:#f7fafc; padding:12px; border-radius:6px; }

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "projects": {
+    "financial-portfolio": {
+      "projectType": "application"
+    }
+  }
+}

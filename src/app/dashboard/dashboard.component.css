@@ -1,0 +1,11 @@
+.dashboard { display:block; max-width:900px; margin:0 auto; }
+.summary { display:flex; gap:12px; flex-wrap:wrap; }
+.card { background:#f7fafc; padding:12px; border-radius:6px; flex:1; min-width:140px; }
+.big { font-size:1.4rem; }
+.chart-wrap { margin-top:16px; }
+.chart { width:100%; height:120px; background:#fff; border:1px solid #e2e8f0; }
+table { width:100%; margin-top:12px; border-collapse:collapse; }
+td, th { border:1px solid #e2e8f0; padding:6px; text-align:left; }
+@media (max-width:600px) {
+  .summary { flex-direction:column; }
+}
